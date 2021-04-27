@@ -15,7 +15,7 @@ function display24time() {
         if (sec < 10){
             sec = '0' + sec;
         }
-        if (0 < ms < 100){
+        if (ms < 100){
             ms = '00' + ms;
         }
         var fullTime = hrs + ":" + min + ":" + sec + ":" + ms;
@@ -60,7 +60,7 @@ function display12time() {
         if (sec < 10){
             sec = '0' + sec;
         }
-        if (0 < ms < 100){
+        if (ms < 100){
             ms = '00' + ms;
         }
         var fullTime = hrs + ":" + min + ":" + sec + ":" + ms + " " + ap;
