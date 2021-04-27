@@ -15,6 +15,9 @@ function display24time() {
         if (sec < 10){
             sec = '0' + sec;
         }
+        if (ms < 10){
+            ms = '00' + ms;
+        }
         var fullTime = hrs + ":" + min + ":" + sec + ":" + ms;
         
         document.getElementById("24clock").innerText = fullTime;
@@ -56,6 +59,9 @@ function display12time() {
         }
         if (sec < 10){
             sec = '0' + sec;
+        }
+        if (ms < 10){
+            ms = '00' + ms;
         }
         var fullTime = hrs + ":" + min + ":" + sec + ":" + ms + " " + ap;
         
